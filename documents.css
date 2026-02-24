@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("wesley-tingey-snNHKZ-mGfE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#Filling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12vh;
+    background: linear-gradient(to right, rgb(60, 60, 60), rgb(75, 75, 75));
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: min(40vw, 8%);
+
+    padding-left: 30px;
+    border-bottom: 2px solid black;
+
+    z-index: 1000;
+}
+
+#Logo {
+    background: linear-gradient(to right, rgb(100, 149, 255), rgb(95, 111, 255));
+    padding: 1vw;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(0.9rem, 1.1vw, 5rem);
+
+    box-shadow: 0px 3px 9px rgb(0, 0, 50);
+    border-radius: 10px;
+}
+
+#Logo:hover {
+    text-decoration: underline;
+}
+
+#Information {
+    background: linear-gradient(to right, rgb(100, 149, 255), rgb(95, 111, 255));
+
+    padding: 1vw;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(1.2rem, 1vw, 5rem);
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    box-shadow: 0px 3px 9px rgb(0, 0, 50);
+    border-radius: 10px;
+}
+
+#Text {
+    flex: 1;
+    margin-top: 12vh;
+    margin-left: 25vw;
+    margin-bottom: 5vh;
+    width: 67vw;
+    height: 78vh;
+    background: linear-gradient(to right, rgba(100, 149, 255, 0.8), rgba(95, 111, 255, 0.8));
+    backdrop-filter: blur(5px);
+
+    border-style:ridge;
+    border-color: rgb(100, 149, 255);
+    border-width: 5px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+h1 {
+    margin-top: 5vh;
+    padding: 1.5vw;
+    background-color: rgb(80, 110, 255);
+    font-size: clamp(1rem, 2vw, 5rem);
+    margin-left: 1vw;
+    border-color:rgb(70, 100, 245);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 100px;
+}
+
+#End {
+    position: fixed;
+    background: linear-gradient(to right, rgb(60, 60, 60), rgb(75, 75, 75));
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    border-top: 2px solid black;
+}
+
+.info:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+ol {
+    margin-left: 1vw;
+    padding: 40px;
+}
+
+ol li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: center;
+    background: linear-gradient(to right, rgb(60, 60, 60), rgb(75, 75, 75));
+    padding: clamp(10px, 1vw, 20px);
+    margin-bottom: min(10px, 10%);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    color: white;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 40px;
+}
+
+li:hover {
+    background: linear-gradient(to right, rgb(75, 75, 75), rgb(75, 75, 75));
+}
